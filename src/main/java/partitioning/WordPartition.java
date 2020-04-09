@@ -32,8 +32,8 @@ public class WordPartition {
             job.setPartitionerClass(WordPartitionPartitioner.class);
             job.setMapOutputKeyClass(Text.class);
             job.setMapOutputValueClass(Text.class);
-            job.setOutputKeyClass(Text.class);
-            job.setOutputValueClass(NullWritable.class);
+            job.setOutputKeyClass(NullWritable.class);
+            job.setOutputValueClass(Text.class);
             job.setNumReduceTasks(2);
             FileInputFormat.addInputPath(job, new Path(args[0]));
             FileOutputFormat.setOutputPath(job, new Path(args[1]));

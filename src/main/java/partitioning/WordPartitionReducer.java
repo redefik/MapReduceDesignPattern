@@ -7,11 +7,11 @@ import org.apache.hadoop.mapreduce.Reducer;
 
 import java.io.IOException;
 
-public class WordPartitionReducer extends Reducer<Text, Text, Text, NullWritable> {
+public class WordPartitionReducer extends Reducer<Text, Text, NullWritable, Text> {
     @Override
     protected void reduce(Text key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
         for (Text value : values) {
-            context.write(value, NullWritable.get());
+            context.write(NullWritable.get(), value);
         }
     }
 }

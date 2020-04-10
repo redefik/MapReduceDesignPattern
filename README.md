@@ -10,4 +10,6 @@
  (l'espressione regolare in questo caso) 
  * Word Distinct: pattern Distinct
  * Post Comment Import: esempio d'uso di MultipleInputs per utilizzare un mapper diverso a seconda della sorgente dati.
- 
+ * Word Sorting: esempio d'uso del campionamento per un'equa distribuzione delle chiavi intermedie ed esempio d'uso della
+   classe SequenceFile per i file di piccole dimensioni.
+   

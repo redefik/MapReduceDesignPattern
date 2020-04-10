@@ -9,3 +9,5 @@
  * Word Grep: esempio d'uso di setup() nel mapper per leggere un parametro fornito dall'utente 
  (l'espressione regolare in questo caso) 
  * Word Distinct: pattern Distinct
+ * Post Comment Import: esempio d'uso di MultipleInputs per utilizzare un mapper diverso a seconda della sorgente dati.
+ 

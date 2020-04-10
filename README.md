@@ -8,3 +8,4 @@
   uso di NullWritable per evitare che il reducer stampi un valore di output
  * Word Grep: esempio d'uso di setup() nel mapper per leggere un parametro fornito dall'utente 
  (l'espressione regolare in questo caso) 
+ * Word Distinct: pattern Distinct
